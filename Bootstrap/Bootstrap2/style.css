@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg'); /* Placeholder image URL */
+    background-repeat: repeat;
+}
+
+.navbar>.container-fluid{
+    justify-content: flex-start;
+    background-color: black;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0px;
+    margin-top: -10px;
+}
+
+
+.carousel {
+    margin-top: 56px; 
+}
+
+#card-title{
+    height: 20vh;
+    text-align: center;
+}
+
+#card-subtitle{
+    color: white;
+}
+
+.parallax-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg'); /* Placeholder image URL */
+    background-repeat: repeat;
+    background-size: cover;
+    animation: parallaxBackground 10s linear infinite;
+}
+
+.foreground {
+    background: rgba(255, 255, 255, 0.5); /* Adjust the color and transparency */
+    animation: parallaxForeground 10s linear infinite;
+}
+
+@keyframes parallaxBackground {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes parallaxForeground {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50vh);
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+
+#container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
