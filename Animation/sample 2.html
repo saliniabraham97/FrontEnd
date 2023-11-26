@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Animation</title>
+        <style>
+            @keyframes bounce {
+                0%{
+                transform: translateY(0px);
+                }
+                25% {
+                    transform: translateY(-100px);
+                }
+                50% {
+                transform: translateY(0px);
+                }
+                75% {
+                    transform: translateY(-50px);
+                }
+                100% {
+                transform: translateY(-25px);
+                }
+            }
+            body{
+                position: relative;
+            }
+            div{
+                height: 100px;
+                width: 100px;
+                background-color: crimson;
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                animation: bounce 2s ease-in-out 4;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
