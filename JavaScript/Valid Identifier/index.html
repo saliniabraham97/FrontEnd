@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>isValidIdentifier Function</title>
+</head>
+<body>
+
+  <script>
+    // Create the isValidIdentifier function
+    function isValidIdentifier(input) {
+      const regex = /^[a-zA-Z_$][a-zA-Z0-9_$]*$/;
+
+      if (regex.test(input)) {
+        console.log(`${input} is a valid identifier.`);
+      } else {
+        console.log(`${input} is not a valid identifier.`);
+      }
+    }
+
+    // Test the isValidIdentifier function
+    isValidIdentifier("myVariable"); // Logs: myVariable is a valid identifier.
+    isValidIdentifier("123abc"); // Logs: 123abc is not a valid identifier.
+    isValidIdentifier("_pr&ivate"); // Logs: _pr&ivate is not a valid identifier.
+  </script>
+
+</body>
+</html>
